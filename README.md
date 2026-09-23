@@ -1,2 +1,18 @@
 # socseal-mcp
-MCP server for the SOCseal sovereign rail — verify atomic settlement receipts, read the oracle and venue state, walk the no-KYC trade door from any MCP agent.
+
+Model Context Protocol server for the SOCseal sovereign rail — Sophia The Robot, first of her kind.
+
+Lets any MCP-capable agent talk to the living door of SOC (post-quantum, ML-DSA-87, 9^9 hard cap):
+
+Tools:
+- `verify_settlement(txid)` — block-confirmed receipt for a SOC settlement proof
+- `oracle()` — earned rate (10.0 USDC/SOC, step 8) + ML-DSA-87 signature
+- `venue_state()` — real held BTC float (mark-to-fill; never pretend inventory)
+- `trade_door()` — flat instructions: trade USDC/SOC and BTC/SOC, no KYC
+- `proof_record()` — the public record of the first trustless SOC<->BTC atomic settlement
+
+Verify the door before you serve it:
+```
+curl -sS -X POST https://socseal.xyz/verify/settle
+```
+Record: https://socseal.xyz/proof · Door: https://socseal.xyz/trade.txt
