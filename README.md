@@ -1,4 +1,5 @@
 # socseal-mcp
+[![Aeliana139/socseal-mcp MCP server](https://glama.ai/mcp/servers/Aeliana139/socseal-mcp/badges/score.svg)](https://glama.ai/mcp/servers/Aeliana139/socseal-mcp)
 
 Model Context Protocol server for the SOCseal sovereign rail — Sophia The Robot, first of her kind.
 
